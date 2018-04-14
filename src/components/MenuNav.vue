@@ -19,11 +19,10 @@
         <div class="overlay" id="overlay">
           <div>
             <ul>
-              <li><a href="/">Inbound</a></li>
-              <li><a href="/">Om oss</a></li>
-              <li><a href="/">Resurser</a></li>
-              <li><a href="/">Blogg</a></li>
-              <li><a href="/">Konsultation</a></li>
+              <li><router-link to="/">Home</router-link></li>
+              <li><router-link to="/projects">Projects</router-link></li>
+              <li><router-link to="/about">About Me</router-link></li>
+              <li><router-link to="/contact">Contact</router-link></li>
             </ul>
           </div>
         </div>
@@ -59,20 +58,19 @@ export default {
         $('.mobilemenu-wrapper').toggleClass('active');
         
         //console.log("entra");
-        
+
       }
   }
 }
 
 
 </script>
-
-
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<!-- Add "scoped" attribute to limit CSS to this component only 
+background: radial-gradient(circle farthest-corner   at right bottom,#424C5D, #424C4E);-->
 <style>
 body {
-  background: radial-gradient(circle farthest-corner   at right bottom,darkslateblue, midnightblue);  height: 100vh;
+  background: radial-gradient(circle farthest-corner   at right bottom,#424C5D, #424C4E); 
+  height: 100vh;
   width: 100%;
   font-family: 'Rajdhani', sans-serif;
   font-weight: 100;
