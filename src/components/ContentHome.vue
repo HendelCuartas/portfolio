@@ -18,4 +18,10 @@ export default {
 
 <style>
 
+@import url(https://fonts.googleapis.com/css?family=Rajdhani);
+
+.container_home img{
+  max-width: 20%;
+  margin-top: 100px;
+}
 </style>
