@@ -7,11 +7,8 @@
 <script>
 export default {
   name: 'ContentHome',
-  
   data () {
-    return {
-      
-    }
+    return {}
   }
 }
 </script>

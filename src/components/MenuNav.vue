@@ -1,11 +1,7 @@
 <template>
-
  <header class="global-nav">
-
   <nav role="navigation" class="container">
     <ul class="nav-wrapper">
-      
-      
       <!-- Start Mobile Section -->
       <li class="navsection-mobile">
         <!-- Mobile Menu Button -->
@@ -29,45 +25,37 @@
       </li>
       <!-- End Mobile Section -->
       <!-- Start Search Section -->
-      
     </ul>
   </nav>
 </header>
 
 </template>
 
-
 <script>
+import $ from 'jquery'
 export default {
   name: 'MenuNav',
-  
   data () {
-    return {
-      
-    }
+    return {}
   },
 
   methods: {
-      setActive (){
-        
-        $(this).toggleClass('active');
-        $('#overlay').toggleClass('open');
-        $('.mobilemenu-wrapper').toggleClass('active');
-        
-        //console.log("entra");
-
-      }
+    setActive () {
+      $(this).toggleClass('active')
+      $('#overlay').toggleClass('open')
+      $('.mobilemenu-wrapper').toggleClass('active')
+    }
   }
 }
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only 
+<!-- Add "scoped" attribute to limit CSS to this component only
 background: radial-gradient(circle farthest-corner   at right bottom,#424C5D, #424C4E);-->
 <style>
 
 @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
 
 body {
-  background: radial-gradient(circle farthest-corner   at right bottom,#424C5D, #424C4E); 
+  background: radial-gradient(circle farthest-corner   at right bottom,#424C5D, #424C4E);
   height: 100vh;
   width: 100%;
   font-family: 'Rajdhani', sans-serif;
@@ -98,7 +86,6 @@ body {
     padding: 0;
     margin: 0;
 }
-
 
 .nav-wrapper {
   display: -webkit-box;
@@ -223,8 +210,7 @@ body {
           animation-delay: 0.50s;
 }
 .overlay.open li:nth-of-type(5) {
-  -webkit-animation-delay: 0.55s;
-          animation-delay: 0.55s;  
+    animation-delay: 0.55s;
 }
 .overlay div {
   font-size: 32px;
@@ -251,20 +237,18 @@ body {
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-	-webkit-transform: translate3d(70px,0px,0px);
-	        transform: translate3d(70px,0px,0px)
+      transform: translate3d(70px,0px,0px);
   }
   100% {
     opacity: 1;
-	-webkit-transform: translate3d(0px,0px,0px);
-	        transform: translate3d(0px,0px,0px)
+      transform: translate3d(0px,0px,0px);
   }
 }
   .navsection-mobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  } 
+  }
   .navsection-primary {
     display: none;
   }
