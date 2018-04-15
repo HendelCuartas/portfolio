@@ -38,9 +38,6 @@
 
 
 <script>
-
-
-
 export default {
   name: 'MenuNav',
   
@@ -62,12 +59,13 @@ export default {
       }
   }
 }
-
-
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only 
 background: radial-gradient(circle farthest-corner   at right bottom,#424C5D, #424C4E);-->
 <style>
+
+@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
+
 body {
   background: radial-gradient(circle farthest-corner   at right bottom,#424C5D, #424C4E); 
   height: 100vh;

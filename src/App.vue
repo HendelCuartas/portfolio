@@ -1,19 +1,26 @@
 <template>
   <div id="app">
-    
+    <MenuNav/>
     <router-view/>
   </div>
 </template>
 
 <script>
+
+import MenuNav from '@/components/MenuNav'
+import ContentHome from '@/components/ContentHome'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    MenuNav, ContentHome
+  }
 }
 </script>
 
 <style>
 
-@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
+
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
