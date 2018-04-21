@@ -96,9 +96,7 @@ body {
   background-color: #2c3e50;
 }
 .container {
-  
   margin: 0 auto;
-  
 }
 /* General Styling for Navigation */
 .global-nav {

@@ -1,6 +1,4 @@
 <template>
-
-
   <div class="container_about page">
     <div class="msjinteractive">
       <p class="line-1 anim-typewriter">Welcome! I am an interactive media designer</p>

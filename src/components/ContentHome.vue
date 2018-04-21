@@ -56,7 +56,6 @@ export default {
   font-weight: 600;
   overflow: hidden;
   height: 40px;
-  
 }
 .content__container:before {
   content: '[';

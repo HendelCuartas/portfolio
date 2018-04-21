@@ -3,15 +3,10 @@
             <div id="sliderAccueil">
                     <div id="slideshow-wrap">
                         <input type="radio" id="button-1" name="controls" checked="checked" v-on:click="closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
-                        
                         <input type="radio" id="button-2" name="controls" v-on:click="closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
-                        
                         <input type="radio" id="button-3" name="controls" v-on:click="closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
-                        
                         <input type="radio" id="button-4" name="controls" v-on:click="closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
-                        
                         <input type="radio" id="button-5" name="controls" v-on:click="closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
-                        
                         <label for="button-1" class="arrows" id="arrow-1">></label>
                         <label for="button-2" class="arrows" id="arrow-2">></label>
                         <label for="button-3" class="arrows" id="arrow-3">></label>
@@ -57,7 +52,6 @@
 
                                 <li>
                                     <div id="slide2" class="slides" v-on:click="showDetailedMatchStatisticsSlideDos">
-                                      
                                     </div>
                                     <div class="description">
                                         <div class="description-text">
