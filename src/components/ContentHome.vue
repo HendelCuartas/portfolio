@@ -41,7 +41,7 @@ export default {
 @import url(https://fonts.googleapis.com/css?family=Rajdhani);
 .content {
   position: absolute;
-  top: 10%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -56,7 +56,7 @@ export default {
   font-weight: 600;
   overflow: hidden;
   height: 40px;
-  padding: 0 40px;
+  
 }
 .content__container:before {
   content: '[';
@@ -83,12 +83,13 @@ export default {
 .content__container__text {
   display: inline;
   float: left;
-  margin: 0;
+  margin-left: 0.5em;
+  margin-top: -0.001em;
   color: goldenrod;
 }
 .content__container__list {
   margin-top: -2px;
-  padding-left: 110px;
+  padding-left: 100px;
   text-align: left;
   list-style: none;
   -webkit-animation-name: change;
@@ -97,10 +98,12 @@ export default {
   animation-name: change;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+  max-width: 20em;
 }
 .content__container__list__item {
   line-height: 40px;
   margin: 0;
+  margin-right: 0.5em;
 }
 
 @-webkit-keyframes opacity {
@@ -173,7 +176,7 @@ export default {
 }
 .container_home img {
   max-width: 20%;
-  margin-top: 150px;
+  margin-top: 30vh;
 }
 .container_home a {
   text-decoration: none;

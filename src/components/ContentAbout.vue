@@ -1,4 +1,6 @@
 <template>
+
+
   <div class="container_about page">
     <div class="msjinteractive">
       <p class="line-1 anim-typewriter">Welcome! I am an interactive media designer</p>
@@ -17,6 +19,7 @@
         <a class="routerLink"><router-link to="/abilities">About my abilities<p class="arrow">></p></router-link></a>
       </div>
   </div>
+
 </template>
 
 <script>
@@ -32,6 +35,10 @@ export default {
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
+
+.container_about{
+    background-color: #2c3e50;
+}
 .container_about a {
   text-decoration: none;
   color: white;
@@ -84,8 +91,8 @@ export default {
 }
 .description-about{
   position: absolute;
-  left: 20%;
-  top: 5em;
+  left: 22%;
+  top: 6em;
   width: 21em;
   height: 28em;
   background-color:goldenrod;
@@ -119,7 +126,7 @@ body{
 }
 .msjinteractive{
   position: absolute;
-  top: 2em;
+  top: 3.5em;
   left: 50%;
   transform: translate(-50%, -50%);
 }

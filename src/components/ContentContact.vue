@@ -28,6 +28,9 @@ export default {
 </script>
 
 <style>
+body{
+  background-color: #2c3e50;
+}
 iframe {
   position: fixed;
   left: 0;

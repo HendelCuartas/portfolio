@@ -93,11 +93,12 @@ body {
   color: white;
   position: relative;
   overflow: hidden;
+  background-color: #2c3e50;
 }
 .container {
-  max-width: 1180px;
+  
   margin: 0 auto;
-  padding: 0 30px;
+  
 }
 /* General Styling for Navigation */
 .global-nav {
@@ -136,13 +137,8 @@ body {
   color: rgba(255,255,255,0.6);
 }
 .navsection-mobile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-    height: 50px;
+  margin-right: 2em;
+  margin-top: 2em;
 }
 /* Styling Mobile Section */
 .navsection-mobile {
