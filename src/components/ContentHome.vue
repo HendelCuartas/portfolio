@@ -2,18 +2,20 @@
   <div class="container_home page">
 <div class="content">
   <div class="content__container">
-    <p class="content__container__text">
+    <p class="content__container__text animated pulse">
       With
     </p>
     <ul class="content__container__list">
-      <li class="content__container__list__item">love</li>
-      <li class="content__container__list__item">enthusiasm</li>
-      <li class="content__container__list__item">energy</li>
-      <li class="content__container__list__item">good vibes</li>
+      <li class="content__container__list__item animated pulse">love</li>
+      <li class="content__container__list__item animated pulse">enthusiasm</li>
+      <li class="content__container__list__item animated pulse">energy</li>
+      <li class="content__container__list__item animated pulse">good vibes</li>
     </ul>
   </div>
 </div>
-      <img src="@/logos/logo.png" alt="Logo HE">
+      <img class="animated pulse" src="@/logos/logo.png" alt="Logo HE">
+      <p class="namehe animated pulse"> Héndel Cuartas</p>
+      <h2 class="animated slideInUp">Interactive media designer</h2>
       <div class="view-proje">
         <a class="routerLink"><router-link to="/projects">Take a look at my work!<p class="arrow">></p></router-link></a>
       </div>
@@ -39,12 +41,11 @@ export default {
 
 <style>
 @import url(https://fonts.googleapis.com/css?family=Rajdhani);
+@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
 .content {
   position: absolute;
-  top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 5%;
+  left: 0%;
   height: 160px;
   overflow: hidden;
   font-family: 'Rajdhani', sans-serif;
@@ -57,38 +58,15 @@ export default {
   overflow: hidden;
   height: 40px;
 }
-.content__container:before {
-  content: '[';
-  left: 0;
-}
-.content__container:after {
-  content: ']';
-  position: absolute;
-  right: 0;
-}
-.content__container:after, .content__container:before {
-  position: absolute;
-  top: 0;
-  color: #16a085;
-  font-size: 42px;
-  line-height: 40px;
-  -webkit-animation-name: opacity;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  animation-name: opacity;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
 .content__container__text {
   display: inline;
-  float: left;
-  margin-left: 0.5em;
-  margin-top: -0.001em;
   color: goldenrod;
+  margin-left: -5em;
 }
 .content__container__list {
-  margin-top: -2px;
+  margin-top: -1px;
   padding-left: 100px;
+  margin-left: -1em;
   text-align: left;
   list-style: none;
   -webkit-animation-name: change;
@@ -174,7 +152,7 @@ export default {
   }
 }
 .container_home img {
-  max-width: 20%;
+  max-width: 12%;
   margin-top: 30vh;
 }
 .container_home a {
@@ -221,4 +199,18 @@ export default {
     bottom: 0%;
   }
 }
+.namehe{
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+h2{
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.2em;
+  color: white;
+  margin-top: -1.2em;
+  font-weight: lighter;
+}
+
 </style>

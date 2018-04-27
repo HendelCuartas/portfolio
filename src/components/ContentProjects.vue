@@ -307,7 +307,6 @@ export default {
 <style scoped>
 /* eslint-disable */
 @import url(https://fonts.googleapis.com/css?family=Rajdhani);
-@import url(https://fonts.googleapis.com/css?family=Rajdhani);
 /* Curtain container */
 html {
     width: 100%;
@@ -560,10 +559,8 @@ body {
 }
 /*------- SLIDER CSS ------*/
 #slideshow-wrap {
-  height: 720px;
   width: 100%;
   height: 100vh;
-
 }
 #slideshow-inner {
   width: 100%;
@@ -592,6 +589,7 @@ body {
   right: 0;
   width: 75%;
   height: 100%;
+  cursor: pointer;
 }
 #slide1 {
   background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/63500163318687.5aac738ab29d2.jpg') no-repeat center center;

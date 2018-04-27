@@ -1,17 +1,15 @@
 <template>
   <div class="container_contact page">
 <iframe
-  frameborder="0" style="border:0"
+  frameborder="0" style="border:0" class="animated fadeInLeft"
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBBV6vtQYpzN_1r9dM0Zqbplj73ucSgXaU
     &q=carrera+25a+25+120+Agua+Blanca,+Cali,+Valle+del+Cauca" allowfullscreen>
 </iframe>
-<div class="contactinfo">
-  <h1>MEET ME</h1>
-  <h3>Carrera 25A # 25 - 120</h3>
+<div class="contactinfo animated pulse">
   <h1>CALL ME</h1>
   <h3>+57 2 315 623 92 81</h3>
   <h1>WRITE ME</h1>
-  <h3>hendel_10@hotmail.com</h3>
+  <h3>hendelcuartas@gmail.com</h3>
   <h1>DID YOU LIKE MY WORK?</h1>
   <h3>Contact me, I'll be glad to hear you</h3>
 </div>
@@ -28,6 +26,7 @@ export default {
 </script>
 
 <style>
+@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
 body{
   background-color: #2c3e50;
 }

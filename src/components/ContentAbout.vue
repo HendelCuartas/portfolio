@@ -16,6 +16,7 @@
       <div class="view-proje">
         <a class="routerLink"><router-link to="/abilities">About my abilities<p class="arrow">></p></router-link></a>
       </div>
+
   </div>
 
 </template>
@@ -36,6 +37,7 @@ export default {
 
 .container_about{
     background-color: #2c3e50;
+    height: 100vh;
 }
 .container_about a {
   text-decoration: none;
@@ -119,7 +121,7 @@ export default {
 body{
   height: calc(100vh - 8em);
   color: rgba(255,255,255,.75);
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Rajdhani', san-serif;
   background-color: rgb(25,25,25);
 }
 .msjinteractive{
@@ -138,7 +140,7 @@ body{
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
-    font-family: 'Anonymous Pro', monospace;
+    font-family: 'Rajdhani', san-serif;
     color: ghostwhite;
 }
 
