@@ -17,7 +17,7 @@
       <p class="namehe animated pulse"> Héndel Cuartas</p>
       <h2 class="animated slideInUp">Interactive media designer</h2>
       <div class="view-proje">
-        <a class="routerLink"><router-link to="/projects">Take a look at my work!<p class="arrow">></p></router-link></a>
+        <a class="routerLink" rel="noopener noreferrer"><router-link to="/projects">Take a look at my work!<p class="arrow">></p></router-link></a>
       </div>
   </div>
 </template>

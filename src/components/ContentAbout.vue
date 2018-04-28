@@ -14,7 +14,7 @@
 </div>
 
       <div class="view-proje">
-        <a class="routerLink"><router-link to="/abilities">About my abilities<p class="arrow">></p></router-link></a>
+        <a class="routerLink" rel="noopener noreferrer"><router-link to="/abilities">About my abilities<p class="arrow">></p></router-link></a>
       </div>
 
   </div>

@@ -6,7 +6,7 @@
       <li class="navsection-mobile">
         <!-- Mobile Menu Button -->
                  <h2>Menu</h2>
-        <a class="mobilemenu-wrapper" id="toggle" v-on:click="setActive">
+        <a class="mobilemenu-wrapper" id="toggle" v-on:click="setActive" rel="noopener noreferrer">
             <span class="bars"></span>
             <span class="bars"></span>
             <span class="bars"></span>
