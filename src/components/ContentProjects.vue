@@ -2,16 +2,18 @@
 <div class="conteneur">
             <div id="sliderAccueil">
                     <div id="slideshow-wrap">
-                        <input type="radio" id="button-1" name="controls" checked="checked" v-on:click="closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
-                        <input type="radio" id="button-2" name="controls" v-on:click="closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
-                        <input type="radio" id="button-3" name="controls" v-on:click="closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
-                        <input type="radio" id="button-4" name="controls" v-on:click="closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
-                        <input type="radio" id="button-5" name="controls" v-on:click="closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
+                        <input type="radio" id="button-1" name="controls" checked="checked" v-on:click="closeDetailedMatchStatisticsSlideCinco, closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
+                        <input type="radio" id="button-2" name="controls" v-on:click="closeDetailedMatchStatisticsSlideCinco, closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
+                        <input type="radio" id="button-3" name="controls" v-on:click="closeDetailedMatchStatisticsSlideCinco, closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
+                        <input type="radio" id="button-4" name="controls" v-on:click="closeDetailedMatchStatisticsSlideCinco, closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
+                        <input type="radio" id="button-5" name="controls" v-on:click="closeDetailedMatchStatisticsSlideCinco, closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
+                        <input type="radio" id="button-6" name="controls" v-on:click="closeDetailedMatchStatisticsSlideCinco, closeDetailedMatchStatisticsSlideCuatro, closeDetailedMatchStatisticsSlideTres, closeDetailedMatchStatisticsSlideDos, closeDetailedMatchStatistics"/>
                         <label for="button-1" class="arrows" id="arrow-1">></label>
                         <label for="button-2" class="arrows" id="arrow-2">></label>
                         <label for="button-3" class="arrows" id="arrow-3">></label>
                         <label for="button-4" class="arrows" id="arrow-4">></label>
                         <label for="button-5" class="arrows" id="arrow-5">></label>
+                        <label for="button-6" class="arrows" id="arrow-6">></label>
                         <div id="slideshow-inner">
                             <ul>
                                 <li>
@@ -157,48 +159,61 @@
     </div>
                                 </li>
                                 <li>
-                                    <div id="slide5" class="slides">
+                                    <div id="slide5" class="slides" v-on:click="showDetailedMatchStatisticsSlideCinco">
                                     </div>
                                     <div class="description">
                                         <div class="description-text">
-                                            <h1>HDV Documental</h1>
-                                            <p>Huellas de Vida is an interactive documental of the Afro traditional midwifery in the colombian Pacific.
-                                              It is also a tool that allows the midwives to be creators of their own multimedia content.
-                                              This project seeks to conserve and transmit the culture and knowledge of the Afro traditional
-                                              midwifery.
+                                            <h1>Backpacker inphographics</h1>
+                                            <p>This is an inphographics project that tries to show the main things that a backpacker has to know for traveling.
+                                              Also, this project wants to promote this way to know the world. The objective was to be capable of show information
+                                              in an organized and nice looking way.
                                             </p>
                                             <div class="task">
                                               <div class="abstract">
                                                 <h4>What I used</h4>
                                                 <img src="https://i1.wp.com/brogramador.com/wp-content/uploads/2017/10/illustrator.png" alt="">
-                                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Photoshop_CC_icon.png" alt="">
-                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/266px-HTML5_logo_and_wordmark.svg.png" alt="">
-                                                <img src="https://seeklogo.com/images/J/javascript-logo-E967E87D74-seeklogo.com.png" alt="">
-                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/2000px-CSS3_logo_and_wordmark.svg.png" alt="">
                                               </div>
                                             </div>
                                         </div>
                                     </div>
+    <div id="container-popup-slide-cinco">
+        <div id="content-popup-slide-cinco">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/9cd3d961605611.5ae3b42d707c2.png" alt="">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/91c0e261605611.5ae3b42d714a6.png" alt="">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/4c9de061605611.5ae3b42d702a8.png" alt="">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/539b1161605611.5ae3b42d70eea.png" alt="">
+            <div id="close-details-slide-cinco" v-on:click="closeDetailedMatchStatisticsSlideCinco"></div>
+        </div>
+    </div>
                                 </li>
                                 <li>
-                                    <div id="slide6" class="slides">
+                                    <div id="slide6" class="slides" v-on:click="showDetailedMatchStatisticsSlideSeis">
                                     </div>
                                     <div class="description">
                                         <div class="description-text">
-                                            <h1>Portfolio</h1>
-                                            <p>This is my personal branding and identity project.
-                                              Made it using Adobe Illustrator and Photoshop.
-                                              You can take a look of the process and results.
+                                            <h1>Recipe</h1>
+                                            <p>Recipe is a social network for chefs and people who want to learn new recipes.
+                                              This project seeks to bring people who like to cook a easier way to know other
+                                              people that can teach and give advices.
                                             </p>
                                             <div class="task">
                                               <div class="abstract">
-                                                <h4>What I used</h4>
+                                                <h4>What we used</h4>
                                                 <img src="https://i1.wp.com/brogramador.com/wp-content/uploads/2017/10/illustrator.png" alt="">
                                                 <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Photoshop_CC_icon.png" alt="">
                                               </div>
                                             </div>
                                         </div>
                                     </div>
+    <div id="container-popup-slide-seis">
+        <div id="content-popup-slide-seis">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/9cd3d961605611.5ae3b42d707c2.png" alt="">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/91c0e261605611.5ae3b42d714a6.png" alt="">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/4c9de061605611.5ae3b42d702a8.png" alt="">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/539b1161605611.5ae3b42d70eea.png" alt="">
+            <div id="close-details-slide-seis" v-on:click="closeDetailedMatchStatisticsSlideSeis"></div>
+        </div>
+    </div>
                                 </li>
                             </ul>
                         </div>
@@ -209,7 +224,6 @@
 
 <script>
 /* eslint-disable no-new */
-import axios from 'axios'
 import $ from 'jquery'
 export default {
   name: 'ContentProjects',
@@ -266,19 +280,33 @@ export default {
           $(this).css('display', 'none')
         })
       })
+    },
+    showDetailedMatchStatisticsSlideCinco () {
+      $('#container-popup-slide-cinco').css('display', 'flex').animate({'opacity': 1}, 300, function () {
+        $('#content-popup-slide-cinco').animate({'opacity': 1}, 700)
+      })
+    },
+    closeDetailedMatchStatisticsSlideCinco () {
+      $('#content-popup-slide-cinco').animate({'opacity': 0}, 500, function () {
+        $('#container-popup-slide-cinco').animate({'opacity': 0}, 300, function () {
+          $(this).css('display', 'none')
+        })
+      })
+    },
+    showDetailedMatchStatisticsSlideSeis () {
+      $('#container-popup-slide-seis').css('display', 'flex').animate({'opacity': 1}, 300, function () {
+        $('#content-popup-slide-seis').animate({'opacity': 1}, 700)
+      })
+    },
+    closeDetailedMatchStatisticsSlideSeis () {
+      $('#content-popup-slide-seis').animate({'opacity': 0}, 500, function () {
+        $('#container-popup-slide-seis').animate({'opacity': 0}, 300, function () {
+          $(this).css('display', 'none')
+        })
+      })
     }
   },
   mounted () {
-    axios
-      .get('http://localhost:3000/projects')
-      .then(response => {
-        // console.log(response.data)//
-        this.proyectos = response.data.projects
-        console.log('log ' + this.proyectos.projects)
-      })
-      .catch(error => {
-        console.log(error)
-      })
     $('#content-popup').animate({'opacity': 0}, 500, function () {
       $('#container-popup').animate({'opacity': 0}, 300, function () {
         $(this).css('display', 'none')
@@ -296,6 +324,16 @@ export default {
     })
     $('#content-popup-slide-cuatro').animate({'opacity': 0}, 500, function () {
       $('#container-popup-slide-cuatro').animate({'opacity': 0}, 300, function () {
+        $(this).css('display', 'none')
+      })
+    })
+    $('#content-popup-slide-cinco').animate({'opacity': 0}, 500, function () {
+      $('#container-popup-slide-cinco').animate({'opacity': 0}, 300, function () {
+        $(this).css('display', 'none')
+      })
+    })
+    $('#content-popup-slide-seis').animate({'opacity': 0}, 500, function () {
+      $('#container-popup-slide-seis').animate({'opacity': 0}, 300, function () {
         $(this).css('display', 'none')
       })
     })
@@ -525,6 +563,125 @@ body {
     margin-top: -2px;
     transform: rotate(-45deg);
 }
+/**/
+#container-popup-slide-cinco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(243, 239, 245, 0.7);
+    z-index: 500;
+    opacity: 1;
+    overflow: scroll;
+}
+/* Match details container */
+#content-popup-slide-cinco {
+    position: absolute;
+    color: #F3EFF5;
+    background-color: #454955;
+    width: 80%;
+    -webkit-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+    opacity: 1;
+    top: 0;
+}
+#content-popup-slide-cinco img {
+    max-width: 100%;
+    padding: 0;
+}
+#close-details-slide-cinco {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+#close-details-slide-cinco::before, #close-details-slide-cinco::after {
+    content:'';
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+    border-bottom: 2px solid rgb(230, 168, 53);
+    transform: rotate(45deg);
+}
+#close-details-slide-cinco::after {
+    margin-top: -2px;
+    transform: rotate(-45deg);
+}
+/* */
+/* Curtain container */
+#container-popup-slide-seis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(243, 239, 245, 0.7);
+    z-index: 500;
+    opacity: 1;
+    overflow: scroll;
+}
+/* Match details container */
+#content-popup-slide-seis {
+    position: absolute;
+    color: #F3EFF5;
+    background-color: #454955;
+    width: 80%;
+    -webkit-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+    opacity: 1;
+    top: 0;
+}
+#content-popup-slide-seis img {
+    max-width: 100%;
+    padding: 0;
+}
+#close-details-slide-seis {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+#close-details-slide-seis::before, #close-details-slide-seis::after {
+    content:'';
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+    border-bottom: 2px solid rgb(230, 168, 53);
+    transform: rotate(45deg);
+}
+#close-details-slide-seis::after {
+    margin-top: -2px;
+    transform: rotate(-45deg);
+}
+#container-popup-slide-seis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(243, 239, 245, 0.7);
+    z-index: 500;
+    opacity: 1;
+    overflow: scroll;
+}
 /* */
 .task {
   position: relative;
@@ -608,7 +765,11 @@ body {
   background-size: cover;
 }
 #slide5 {
-  background: url('https://www.dropbox.com/s/d5824fmymi2we6z/hdv-site-alfa.png') no-repeat center center;
+  background: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/9cd3d961605611.5ae3b42d707c2.png') no-repeat center center;
+  background-size: cover;
+}
+#slide6 {
+  background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/f26b6756770157.59d1840541dd5.jpg') no-repeat center center;
   background-size: cover;
 }
 /* --------------- /MES SLIDES ---------------- */
@@ -654,6 +815,8 @@ body {
 #slideshow-wrap input[type=radio]#button-2:checked~label[for=button-2] { background-color: rgba(255,255,255,1) }
 #slideshow-wrap input[type=radio]#button-3:checked~label[for=button-3] { background-color: rgba(255,255,255,1) }
 #slideshow-wrap input[type=radio]#button-4:checked~label[for=button-4] { background-color: rgba(255,255,255,1) }
+#slideshow-wrap input[type=radio]#button-5:checked~label[for=button-5] { background-color: rgba(255,255,255,1) }
+#slideshow-wrap input[type=radio]#button-6:checked~label[for=button-6] { background-color: rgba(255,255,255,1) }
 /* Décalage des boutons radio */
 #slideshow-wrap label[for=button-1]:not(.arrows)  { margin-right: 56px }
 #slideshow-wrap label[for=button-2]:not(.arrows)  { margin-right: 18px }
@@ -712,7 +875,6 @@ input[type=radio]#button-2:checked~.arrows#arrow-1, input[type=radio]#button-3:c
 /*----- ONGLET DESCRIPTION SLIDER CSS ------*/
 .description {
   position: absolute;
-  display: flex;
   top: 0;
   left: 0;
   width: 25%;
@@ -722,7 +884,6 @@ input[type=radio]#button-2:checked~.arrows#arrow-1, input[type=radio]#button-3:c
   background-color: #424C5D;
   height: 100%;
   padding: 150px 30px 60px 30px;
-  overflow: hidden;
   position: relative;
   -webkit-transition: opacity .2s;
   -moz-transition: opacity .2s;
