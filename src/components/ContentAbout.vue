@@ -8,17 +8,21 @@
     <img src="https://scontent.fclo1-2.fna.fbcdn.net/v/t1.0-9/13465936_1779217955627866_8945928677573353959_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeFVRtwTs1IaClTuMz3k5MbKz2v6L033kjgvXtNs-n8uoyO2CLiSfGzAHEIyO5Lgb5SrJkdwy8hPuTTcoT_T7l1RndLVvEEjDkcr9tcoTVU6ZA&oh=0de68d9c29f42a0d858195bc19510b15&oe=5B5F26E7" alt="">
   </div>
 </div>
-
-<div class="description-about animated pulse">
-  <p>Hello! My name is Héndel and I am 22 years old. By now I live in Cali, Colombia. I am good at creating user experiences and interactions using immersive technologies.</p>
+<div class="iam">
+  <h1>I am Héndel Cuartas</h1>
 </div>
-
+<div class="description-about animated pulse">
+  <p align="center">I’m a last-year <span style="color:darkgoldenrod">Interactive Media Design </span> student interested in creating <span style="color:darkgoldenrod">user experiences</span> and <span style="color:darkgoldenrod">interactions</span> using <span style="color:darkgoldenrod">immersive technologies.</span></p>
+</div>
+<div class="otherthings">
+  <div>
+    <p>I also like to travel, practise calisthenics and read.</p>
+  </div>
+</div>
       <div class="view-proje">
         <a class="routerLink" rel="noopener noreferrer"><router-link to="/abilities">About my abilities<p class="arrow">></p></router-link></a>
       </div>
-
   </div>
-
 </template>
 
 <script>
@@ -35,9 +39,20 @@ export default {
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
 
+.otherthings{
+  position: absolute;
+  bottom: 20%;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5em;
+}
 .container_about{
     background-color: #2c3e50;
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 .container_about a {
   text-decoration: none;
@@ -85,27 +100,39 @@ export default {
 }
 #container {
   position: absolute;
-  right: 35%;
-  top: 8em;
+  right: 20%;
+  top: 10em;
   transform: rotate(5deg);
 }
 .description-about{
   position: absolute;
-  left: 22%;
-  top: 6em;
-  width: 21em;
-  height: 28em;
-  background-color:goldenrod;
+  left: 5em;
+  top: 10em;
+  max-width: 25em;
+  display: block;
+}
+.iam{
+  position: absolute;
+  left: 5em;
+  top: 5em;
+  max-width: 30em;
 }
 .description-about p{
   padding: 0.5em;
   font-size: 2em;
-  color: darkslategray;
+  color: white;
   font-family: 'Rajdhani', san-serif;
+}
+.iam h1{
+  padding: 0.5em;
+  font-size: 2em;
+  color:darkgoldenrod;
+  font-family: 'Rajdhani', san-serif;
+  font-size: 3em;
 }
 #inner {
   width: 20em;
-  height: 23em;
+  height: 20em;
   background-color: white;
   box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.3);
   transition: transform 0.5s;
