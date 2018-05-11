@@ -3,16 +3,12 @@
     <div class="msjinteractive">
       <p class="line-1 anim-typewriter">Welcome! I am an interactive media designer</p>
     </div>
-<div id="container">
-  <div id="inner" class="animated pulse">
-    <img src="https://scontent.fclo1-2.fna.fbcdn.net/v/t1.0-9/13465936_1779217955627866_8945928677573353959_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeFVRtwTs1IaClTuMz3k5MbKz2v6L033kjgvXtNs-n8uoyO2CLiSfGzAHEIyO5Lgb5SrJkdwy8hPuTTcoT_T7l1RndLVvEEjDkcr9tcoTVU6ZA&oh=0de68d9c29f42a0d858195bc19510b15&oe=5B5F26E7" alt="">
-  </div>
-</div>
+    <img src="@/logos/hendelportfolio.png" alt="" class="animated pulse imgper">
 <div class="iam">
   <h1>I am Héndel Cuartas</h1>
 </div>
 <div class="description-about animated pulse">
-  <p align="center">I’m a last-year <span style="color:darkgoldenrod">Interactive Media Design </span> student interested in creating <span style="color:darkgoldenrod">user experiences</span> and <span style="color:darkgoldenrod">interactions</span> using <span style="color:darkgoldenrod">immersive technologies.</span></p>
+  <p align="left">I’m a last-year <span style="color:darkgoldenrod">Interactive Media Design </span> student interested in creating <span style="color:darkgoldenrod">user experiences</span> and <span style="color:darkgoldenrod">interactions</span> using <span style="color:darkgoldenrod">immersive technologies.</span></p>
 </div>
 <div class="otherthings">
   <div>
@@ -39,6 +35,11 @@ export default {
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
 
+@media only screen and (max-width: 950px) {
+    .imgper{
+      display: none;
+    }
+}
 .otherthings{
   position: absolute;
   bottom: 20%;
@@ -98,24 +99,20 @@ export default {
     bottom: 0%;
   }
 }
-#container {
-  position: absolute;
-  right: 20%;
-  top: 10em;
-  transform: rotate(5deg);
-}
+
 .description-about{
-  position: absolute;
-  left: 5em;
-  top: 10em;
-  max-width: 25em;
-  display: block;
+  position: fixed;
+  width: 50%;
+  left: 50%;
+  top: 30%;
+  margin-left: -37.5%;
 }
 .iam{
   position: absolute;
-  left: 5em;
-  top: 5em;
+  left: 50%;
+  top: 10%;
   max-width: 30em;
+  margin-left: -37.5%;
 }
 .description-about p{
   padding: 0.5em;
@@ -130,19 +127,11 @@ export default {
   font-family: 'Rajdhani', san-serif;
   font-size: 3em;
 }
-#inner {
-  width: 20em;
-  height: 20em;
-  background-color: white;
-  box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.3);
-  transition: transform 0.5s;
-  -webkit-transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
-  -o-transition: transform 0.5s;
-}
-#inner img{
-  width: auto;
-  height: inherit;
+.imgper {
+  max-height: 80%;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
 }
 /* Global */
 body{
@@ -155,7 +144,7 @@ body{
   position: absolute;
   top: 3.5em;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 .line-1{
     position: relative;
