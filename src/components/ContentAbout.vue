@@ -3,7 +3,7 @@
     <div class="msjinteractive">
       <p class="line-1 anim-typewriter">Welcome! I am an interactive media designer</p>
     </div>
-    <img src="@/logos/hendelportfolio.png" alt="" class="animated pulse imgper">
+    <img src="../logos/hendelportfolio.png" alt="" class="animated pulse imgper">
 <div class="iam">
   <h1>I am Héndel Cuartas</h1>
 </div>
